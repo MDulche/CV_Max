@@ -121,23 +121,31 @@
 
 // Textes spécifiques pour chaque élément du menu
 const menuTexts = {
-    "home-outline": "Lieu de résidence : Montrond-les-Bains <br> Lieu de travail : La Grand-Croix",
+    "home-outline": "Lieu de résidence : Saint-Etienne <br> Lieu de travail : La Grand-Croix",
     "settings-outline": "Poste actuel : Apprenti <br> Ecole : IRUP - BTS CIEL <br> Employeur : INFODOM / INFOREZO <br> Gestion du parc informatique des professionnelles sous contrat de maintenance.",
     "mail-outline": "Contact 01 42 92 81 00 / sjobs@mac.com",
     "key-outline": "Prénom et Nom : Styve JAUBS <br> Age : 36ans <br> Permis : EC",
-    "camera-outline": "<img src='source/camera-image.jpg' alt='Photo' style='width:100%; border-radius:10px;' /><br>Enfant du démon qui me cause beaucoup trop de problèmes pour la taille qu'il a !",
+    "camera-outline": "<img src='source/camera-image.jpg' alt='Photo' style='width:100%; border-radius:10px;' /><br>",
     "game-controller-outline": "Compétences : <br> Contacts clientèles <br> Informatique : <br> -Technique : Installation et maintenace matérielle <br> -Développement : Python, HTML, CSS, SQL",
     "person-outline": "Expériences : <br><br> Équipier Polyvalent - McDonald's (Août 2023 - Juillet 2024) <br> - Tous les postes ont été occupés <br><br> Stagiaire - Tech On Me (Novembre 2022) <br> -Observation et mise en contact avec les clients <br> -Entretien matériel informatique <br><br> Agent d'entretien Communal - Mairie (Juillet 2022) <br> Peinture et entretien des mains courantes de deux stades",
-    "videocam-outline": "Projets : "
+
   };
 
   // Gestion des clics dans le menu
   $(".menu a").click(function(e) {
-    e.preventDefault();  // Prevent default link behavior
-    let iconName = $(this).find("ion-icon").attr("name"); // Get the icon name
+  e.preventDefault();  // Prevent default link behavior
+  let iconName = $(this).find("ion-icon").attr("name"); // Get the icon name
+
+  // Vérifie si l'icône cliquée est "videocam-outline" (le bouton Projets)
+  if (iconName === "videocam-outline") {
+    // Déclenche le téléchargement du fichier PDF
+    window.location.href = 'CV-Telechargeable.pdf';  // Change le chemin selon l'emplacement du fichier PDF
+  } else {
     let menuItemText = menuTexts[iconName] || "Vous avez cliqué sur un élément."; // Get the text based on the icon
     showModal(menuItemText);
+  }
   });
+
 
   // Fonction pour afficher la modale
   function showModal(text) {
