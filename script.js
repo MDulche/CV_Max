@@ -47,7 +47,7 @@ let iconName = $(this).find("ion-icon").attr("name"); // Get the icon name
 // Vérifie si l'icône cliquée est "videocam-outline" (le bouton Projets)
 if (iconName === "videocam-outline") {
   // Déclenche le téléchargement du fichier PDF
-  window.location.href = 'CV-Telechargeable.pdf';  // Change le chemin selon l'emplacement du fichier PDF
+  window.location.href = 'source/CV-Telechargeable.pdf';  // Change le chemin selon l'emplacement du fichier PDF
 } else {
   let menuItemText = menuTexts[iconName] || "Vous avez cliqué sur un élément."; // Get the text based on the icon
   showModal(menuItemText);
