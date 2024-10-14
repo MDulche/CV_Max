@@ -3,12 +3,12 @@ Ce projet a été basé sur le projet [menu-icons-interativos](https://github.co
 
 Ce projet est distribué sous la licence [MIT License], en conformité avec la licence du projet original.
 
-# Lista de Menu interativo
+# Liste de Menu interactif
 
-Praticando um pouco de HTML e CSS, com essa lista de menus interativos.
+Je pratique un peu le HTML et le CSS, avec cette liste de menus interactifs.
 
 
-## Stack utilizada
+## Stack utilisée
 
 **Front-end:** HTML, CSS,JavaScript
 
