@@ -33,7 +33,7 @@ const menuTexts = {
   "settings-outline": "Poste actuel : Apprenti <br> Ecole : IRUP - BTS CIEL <br> Employeur : INFODOM / INFOREZO <br> Gestion du parc informatique des professionnelles sous contrat de maintenance.",
   "mail-outline": "Contact 01 42 92 81 00 / sjobs@mac.com",
   "key-outline": "Prénom et Nom : Styve JAUBS <br> Age : 36ans <br> Permis : EC",
-  "camera-outline": "<img src='../source/images/camera-image.jpg' alt='Photo' style='width:100%; border-radius:10px;' /><br>",
+  "camera-outline": "<img src='./source/images/camera-image.jpg' alt='Photo' style='width:100%; border-radius:10px;' /><br>",
   "game-controller-outline": "Compétences : <br> Contacts clientèles <br> Informatique : <br> -Technique : Installation et maintenace matérielle <br> -Développement : Python, HTML, CSS, SQL",
   "person-outline": "Expériences : <br><br> Équipier Polyvalent - McDonald's (Août 2023 - Juillet 2024) <br> - Tous les postes ont été occupés <br><br> Stagiaire - Tech On Me (Novembre 2022) <br> -Observation et mise en contact avec les clients <br> -Entretien matériel informatique <br><br> Agent d'entretien Communal - Mairie (Juillet 2022) <br> Peinture et entretien des mains courantes de deux stades",
 
